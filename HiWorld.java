@@ -9,11 +9,11 @@ import java.io.*;
  */
 public class HiWorld {
 
-    public static void takeUserInput(){
+    public static void takeUserInput() {
         String userIn = " ";
         String userOut = " ";
 
-        while(!userIn.equals("done")) {
+        while (!userIn.equals("done")) {
 
             try {
                 InputStreamReader isr = new InputStreamReader(System.in);
@@ -32,9 +32,8 @@ public class HiWorld {
             }
         }
     }
-
-    public static void main(String[] args) {
-        takeUserInput();
-    }
 }
+
+
+
 
