@@ -8,6 +8,7 @@ import java.io.*;
  */
 public class HiWorld {
 
+    // This is the operative method that does the work of the program.
     public static void takeUserInput() {
         String userIn = " ";
         String userOut = " ";
@@ -33,6 +34,8 @@ public class HiWorld {
         }
     }
 
+    // This calls the above method;
+    // They were written separately in this version for modularity's sake.
     public static void main(String[] args) {
         takeUserInput();
     }
