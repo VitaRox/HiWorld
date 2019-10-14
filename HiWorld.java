@@ -1,15 +1,20 @@
 import java.io.*;
 
-/* Poop poopity poop
 
+/* A simple class designed to take in user input via the console until
+ * user is finished, at which point they enter 'done' and the program
+ * prints out a string of the entire input the user typed.
+ * @author VitaRox
+ * @version 1.0
  */
 public class HiWorld {
 
-    public static void main(String[] args) {
+    // This is the operative method that does the work of the program.
+    public static void takeUserInput() {
         String userIn = " ";
         String userOut = " ";
 
-        while(!userIn.equals("done")) {
+        while (!userIn.equals("done")) {
 
             try {
                 InputStreamReader isr = new InputStreamReader(System.in);
@@ -18,6 +23,7 @@ public class HiWorld {
                 userIn = br.readLine();
 
                 if (userIn.equals("done")) {
+                    System.out.println("Here is the probably-vulgar nonsense you typed: ");
                     System.out.println(userOut);
                 } else {
                     userOut = userOut.concat(userIn);
@@ -28,5 +34,15 @@ public class HiWorld {
             }
         }
     }
+
+    // This calls the above method;
+    // They were written separately in this version for modularity's sake.
+    public static void main(String[] args) {
+        takeUserInput();
+    }
 }
+}
+
+
+
 
