@@ -3,5 +3,8 @@ this is an empty test class for git
  */
 
 public class HiWorldTestClass {
+	public static void main(String [] args) {
+		System.out.println("Howdy");
+	}
     
 }
