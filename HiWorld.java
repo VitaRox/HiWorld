@@ -10,8 +10,8 @@ public class HiWorld {
 
     // This is the operative method that does the work of the program.
     public static void takeUserInput() {
-        String userIn = " ";
-        String userOut = " ";
+        String userIn = "";
+        String userOut = "";
 
         while (!userIn.equals("done")) {
 
@@ -23,10 +23,10 @@ public class HiWorld {
 
                 if (userIn.equals("done")) {
                     System.out.println("Here is the probably-vulgar nonsense you typed: ");
-                    System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                    System.out.println(userOut);
+                    System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+                    System.out.printf("%-10s",userOut);
                 } else {
-                    userOut = userOut.concat(userIn + "/\n");
+                    userOut += userIn + "/\n";
                 }
 
             } catch (IOException ioe) {
