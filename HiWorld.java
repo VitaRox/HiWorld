@@ -25,7 +25,7 @@ public class HiWorld {
                     System.out.println("Here is the probably-vulgar nonsense you typed: ");
                     System.out.println(userOut);
                 } else {
-                    userOut = userOut.concat(userIn);
+                    userOut = userOut.concat(userIn + " /");
                 }
 
             } catch (IOException ioe) {
@@ -40,7 +40,7 @@ public class HiWorld {
         takeUserInput();
     }
 }
-}
+
 
 
 
