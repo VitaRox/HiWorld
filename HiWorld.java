@@ -23,9 +23,10 @@ public class HiWorld {
 
                 if (userIn.equals("done")) {
                     System.out.println("Here is the probably-vulgar nonsense you typed: ");
+                    System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                     System.out.println(userOut);
                 } else {
-                    userOut = userOut.concat(userIn + " /");
+                    userOut = userOut.concat(userIn + "/\n");
                 }
 
             } catch (IOException ioe) {
